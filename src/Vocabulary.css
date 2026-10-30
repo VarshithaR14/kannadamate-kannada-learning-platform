@@ -1,0 +1,181 @@
+
+/* KANNADAMATE - YELLOW & RED VOCABULARY THEME */
+
+.vocabulary-section {
+  padding: 75px 25px;
+  background: #fff8e8;
+  color: #3c3028;
+}
+
+.vocabulary-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vocabulary-tag {
+  color: #b3261e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.vocabulary-container h2 {
+  color: #92251d;
+  font-size: 34px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.vocabulary-description {
+  color: #75675a;
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* CATEGORY BUTTONS */
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0 35px;
+}
+
+.category-buttons button {
+  padding: 12px 23px;
+  border: 1px solid #d6a52c;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #92251d;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.category-buttons button:hover {
+  background: #fff0c2;
+  border-color: #b3261e;
+  transform: translateY(-2px);
+}
+
+.category-buttons button.active-category {
+  background: #b3261e;
+  border-color: #b3261e;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(179, 38, 30, 0.18);
+}
+
+/* VOCABULARY CARDS */
+
+.vocabulary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  text-align: center;
+}
+
+.vocabulary-card {
+  background: #ffffff;
+  border: 1px solid #f0dfb7;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 5px 18px rgba(100, 50, 20, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vocabulary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(100, 50, 20, 0.12);
+  border-color: #e1bd65;
+}
+
+.vocabulary-card h3 {
+  color: #a52a20;
+  font-size: 29px;
+  font-weight: 800;
+  margin: 5px 0 14px;
+}
+
+.word-english {
+  color: #342c27;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.word-pronunciation {
+  color: #8a7766;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* LISTEN BUTTON */
+
+.word-audio {
+  margin-top: 8px;
+  padding: 11px 22px;
+  background: #b3261e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.word-audio:hover {
+  background: #8e201a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(179, 38, 30, 0.2);
+}
+
+.word-audio:active {
+  transform: scale(0.97);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .vocabulary-section {
+    padding: 55px 18px;
+  }
+
+  .vocabulary-container h2 {
+    font-size: 28px;
+  }
+
+  .vocabulary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .vocabulary-card {
+    padding: 23px 12px;
+  }
+
+  .vocabulary-card h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vocabulary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-buttons {
+    gap: 8px;
+  }
+
+  .category-buttons button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
